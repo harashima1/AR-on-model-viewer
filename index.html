@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <title>モデル表示テスト</title>
+    <script 
+    type="module" 
+    src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js">
+    </script>
     <style>
       html,
       body {
@@ -26,19 +30,17 @@
   </head>
   <body>
     <!-- 3Dモデル表示セクション -->
-    <div class="view">
-      <model-viewer
-        src="/models/Donut.glb"
-        ios-src="/models/Nixie_Tube_draft.usdz"
-        ar
-      >
-      </model-viewer>
+    <model-viewer
+    ar
+    ar-modes="scene-viewer webxr quick-look"
+    src="/Donut.glb"
+    alt="donut"
+    auto-rotate
+    camera-controls
+  ></model-viewer>
     </div>
 
-    <script 
-    type="module" 
-    src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js">
-    </script>
+
 
     <!-- モデルが読み込んでいるかのチェック用 -->
     <script>

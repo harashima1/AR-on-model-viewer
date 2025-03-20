@@ -27,14 +27,16 @@
   </head>
   <body>
     <!-- 3Dモデル表示セクション -->
-    <div class="view">
-      <model-viewer
-        src="/models/Donut.glb"
-        ios-src="/models/Nixie_Tube_draft.usdz"
-        ar
-      >
-      </model-viewer>
+    <model-viewer
+    ar
+    ar-modes="scene-viewer webxr quick-look"
+    src="/Donut.glb"
+    alt="donut"
+    auto-rotate
+    camera-controls
+  ></model-viewer>
     </div>
+
 
 
     <!-- モデルが読み込んでいるかのチェック用 -->
