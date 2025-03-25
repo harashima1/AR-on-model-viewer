@@ -3,17 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <title>モデル表示テスト</title>
-    <script type="module" crossorigin src="/AR-on-model-viewer/assets/index-B5Qt9EMX.js"></script>
+    <script type="module" crossorigin src="/assets/index-B5Qt9EMX.js"></script>
   </head>
   <body>
     <!-- 3Dモデル表示セクション -->
-    <model-viewer
-    ar
-    ar-modes="scene-viewer webxr quick-look"
-    src="/models/Donut.glb"
-    alt="donut"
-    auto-rotate
-    camera-controls
-  ></model-viewer>
+    <model-viewer src="/models/Donut.glb" 
+    alt="3D Model" 
+    auto-rotate 
+    camera-controls 
+    ar>
+    </model-viewer>
   </body>
 </html>
