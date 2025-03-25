@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build && xcopy /E /I /Y dist docs",
     "rebuild": "vite build && rmdir /s /q docs && xcopy /E /I /Y dist docs",
     "git": "git add . && git commit && git push origin main",
