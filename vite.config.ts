@@ -7,6 +7,7 @@ export default defineConfig({
   base: '/AR-on-model-viewer/',
   build: {
     rollupOptions: {
+      external: ["https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"],
       output: {
         manualChunks(id) {
           if (id.includes('node_modules')) {
